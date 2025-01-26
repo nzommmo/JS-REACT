@@ -33,3 +33,45 @@ for (let z of companies) {
 }
 
 document.getElementById("Companies").innerHTML = companiesinfo
+
+// The While Loop
+let k = 0;
+let counter = ""
+
+do{
+    counter += "<br> The number is " + k;
+    k++;
+}
+while (k < 10)
+
+document.getElementById("counter").innerHTML = counter
+
+
+const Book = ["Genesis","Exodus","Luke"]
+let q = 0;
+let Books = "";
+
+while (Book[q]){
+    Books += Book[q] + "<br>"
+    q++
+}
+
+document.getElementById("Books").innerHTML = Books
+
+// Break Statement
+let breaks = "";
+for (let i = 0; i < 10; i++) {
+    if (i === 3) { break }
+    breaks += "The number is " + i + "<br>"
+}
+
+document.getElementById("Break").innerHTML = breaks
+
+// Continue Statement
+let conts = ""
+for(let t=0; t<10;t++){
+    if(t===3) {continue}
+    conts += "The number is " + t + "<br>"
+}
+
+document.getElementById("continue").innerHTML = conts
