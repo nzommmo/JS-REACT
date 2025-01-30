@@ -49,3 +49,30 @@ hello = () => {
 }
 
 document.getElementById("hello").innerHTML = hello()
+
+
+// A function that takes name as an argument
+
+const greet = (name) => `Hello ${name}!` 
+
+document.getElementById("hello").innerHTML = greet("Nzomo")
+
+
+const square = (num) => num * num
+document.getElementById("square").innerHTML =  square(5)
+
+
+// Function that take two numbers and returns the max
+
+const maximum = (v,z) => (v > z ? v :z )
+document.getElementById("maximum").innerHTML = maximum(2,3)
+
+
+// IIFE (Immediately Invoked Function Expression)
+var output = (function() {
+    var x = 10;
+    var y = 20;
+    return x + y;
+}) ()
+
+document.getElementById("output").innerHTML = output
